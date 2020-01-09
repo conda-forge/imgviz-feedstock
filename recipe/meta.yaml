@@ -26,6 +26,7 @@ requirements:
     # contained in [all]
     - scikit-image
     - scikit-learn
+    - libwebp
 
 test:
   imports:
