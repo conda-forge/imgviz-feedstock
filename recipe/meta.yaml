@@ -1,5 +1,5 @@
 {% set name = "imgviz" %}
-{% set version = "0.12.1" %}
+{% set version = "0.12.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e81f4941ef1e9e6a11c1b317415da72a8fd66ff86b9c4941555dae270c4918e7
+  sha256: df70ae6ac90058ada63ac1b247703624be58cb3be3ac796ce4b78efb5a80e9c8
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -40,7 +40,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Image Visualization Tools'
+  summary: Image Visualization Tools
 
 extra:
   recipe-maintainers:
