@@ -1,5 +1,5 @@
 {% set name = "imgviz" %}
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cc652ee12ab22088442bfeaf13b7853bf751086e182db17d85e82bf2e0d7bf2a
+  sha256: 23cb08f66195b0f9f985dcf9e3b6671e9a24307eced1d40529724363a2320abc
 
 build:
   noarch: python
@@ -23,11 +23,11 @@ requirements:
     - matplotlib-base
     - numpy
     - pillow >=5.3.0
+    - pyyaml
     # contained in [all]
     - pyglet
     - scikit-image
     - scikit-learn
-    - libwebp
 
 test:
   imports:
