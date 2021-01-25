@@ -23,11 +23,11 @@ requirements:
     - matplotlib-base
     - numpy
     - pillow >=5.3.0
+    - pyyaml
     # contained in [all]
     - pyglet
     - scikit-image
     - scikit-learn
-    - libwebp
 
 test:
   imports:
