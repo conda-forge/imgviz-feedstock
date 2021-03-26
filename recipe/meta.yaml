@@ -1,5 +1,5 @@
 {% set name = "imgviz" %}
-{% set version = "1.2.5" %}
+{% set version = "1.2.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7fcc72fc54cf232d3f1f84d35fd77ecb9413487031e8aa755a77cbaf973d3416
+  sha256: 01efdfb4295040b07bb8d83c795b527083547916cb4914f1a370c511f060c380
 
 build:
   noarch: python
@@ -16,10 +16,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - matplotlib-base
     - numpy
     - pillow >=5.3.0
