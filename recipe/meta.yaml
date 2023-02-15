@@ -1,5 +1,5 @@
 {% set name = "imgviz" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 56efa9676717ec205731e9a5ef4f47031d7b2439bc6a974510cba5289b8abe67
+  sha256: 026f89421c3fadca13387623a80bbd24d1acb518743b3439c1fb0d7abfeae103
 
 build:
   noarch: python
