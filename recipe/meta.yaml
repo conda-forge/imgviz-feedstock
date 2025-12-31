@@ -1,12 +1,11 @@
-{% set name = "imgviz" %}
 {% set version = "1.8.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: imgviz
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/i/imgviz/imgviz-{{ version }}.tar.gz
   sha256: 2eb3968d6e2875cb0f8ad62a7fc2d6bed8c81671609a047f49ee74b3b7eb34e5
 
 build:
@@ -21,6 +20,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
+    - cmap >=0.1.0
     - matplotlib-base
     - numpy
     - pillow >=5.3.0
